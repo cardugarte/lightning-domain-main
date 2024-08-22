@@ -3,7 +3,7 @@
 Provide Lightning Addreses with your domain.
 Provides [NIP-05](https://github.com/nostr-protocol/nips/blob/master/05.md) and [LUD-16](https://github.com/lnurl/luds/blob/luds/16.md) for users.
 
-Just deploy it and assign your domain.
+Just deploy it and assign your domain
 
 ## Our stack
 
