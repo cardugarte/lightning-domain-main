@@ -3,8 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
 import logo from '/src/assets/images/logo-large.png';
-import laWalletLogo from 'src/assets/images/favicon.png';
-
+import Logo from '~/components/Logo';
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-[#131C31]">
@@ -44,8 +43,8 @@ export default function Home() {
             href="https://lawallet.io"
             target="_blank"
           >
-            <p className="pr-1 hover:text-neutral-50">Con el respaldo Open Source de LaWallet.io</p>
-            <Image src={laWalletLogo} alt="La Cripta" width={20} height={20} />
+            <p className="pr-1 hover:text-neutral-50 font-extrabold">Con el respaldo Open Source de </p>
+            <Logo />
           </Link>
         </div>
       </div>
