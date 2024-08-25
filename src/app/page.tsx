@@ -9,6 +9,8 @@ export default function Home() {
       <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
         <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem] text-neutral-50">
           Xplorer, una plataforma para
+        </h1>
+        <h2 className="flex flex-col items-center justify-center gap-12 px-4 py-3 text-5xl font-extrabold tracking-tight sm:text-[5rem] text-neutral-50 color-linear">
           <Typewriter
             options={{
               wrapperClassName: 'text-neutral-50',
@@ -17,7 +19,7 @@ export default function Home() {
               loop: true,
             }}
           />
-        </h1>
+        </h2>
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
           <Link
