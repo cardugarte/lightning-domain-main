@@ -25,6 +25,7 @@
     "nostr-tools": "^1.17.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "typewriter-effect": "^2.21.0",
     "zod": "^3.22.4"
   },
   "devDependencies": {
