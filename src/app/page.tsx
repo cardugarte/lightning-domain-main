@@ -1,32 +1,50 @@
+'use client';
 import Link from 'next/link';
-import LaCryptaLogo from '~/components/LaCryptaLogo';
+import Image from 'next/image';
+import Typewriter from 'typewriter-effect';
+import logo from '/src/assets/images/logo-large.png';
 import Logo from '~/components/Logo';
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#d2d2d2] to-[#fefefe]">
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
-        <h1 className="text-5xl font-extrabold tracking-tight text-black sm:text-[5rem]">
-          <Logo />
-        </h1>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-[#131C31]">
+      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-4 ">
+        <div className="container flex flex-col sm:flex-row items-center justify-evenly gap-12 px-4 py-4">
+          <div className="flex flex-col items-center justify-center gap-12">
+            <Image src={logo} alt="logo xplorers.ar" width={600} height={600} />
+          </div>
+          <div className="flex flex-col items-center justify-center gap-2 mx-4">
+            <h1 className="text-1xl font-extrabold text-neutral-50 sm:text-2xl md:text-4xl lg:text-4xl xl:text-5xl">
+              Una plataforma para
+            </h1>
+            <h2 className="gap-10 text-1xl py-4 font-extrabold tracking-tight text-neutral-50 color-linear">
+              <Typewriter
+                options={{
+                  wrapperClassName:
+                    'text-5xl font-extrabold  text-neutral-50 sm:text-2xl md:text-5xl lg:text-3xl xl:text-5xl',
+                  strings: ['Pagar', 'Conectar', 'Explorar'],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </h2>
+            <div className="container flex flex-col md:flex-row sm:flex-col items-center justify-center gap-4 px-12 py-4">
+              <Link href="https://wallet.xplorers.ar/signup" target="_blank">
+                <button className="btn btn-linear w-36 h-14 hover-neon:hover">Sign up</button>
+              </Link>
+              <Link href="https://wallet.xplorers.ar/login" target="_blank">
+                <button className="btn btn-border-linear w-36 h-14">Login</button>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div>
           <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-black hover:bg-white/20"
-            href="https://lacrypta.ar"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">
-              <LaCryptaLogo />
-            </h3>
-            <div className="text-lg">Conocé quiénes están detrás de todo esto.</div>
-          </Link>
-          <Link
-            className="flex max-w-xs flex-col gap-10 rounded-xl bg-white/10 p-4 pt-8 text-black hover:bg-white/20"
+            className="flex max-w-md flex-row rounded-xl text-neutral-50 hover:text-neutral-50 bg-white/10 p-4 hover:bg-white/20"
             href="https://lawallet.io"
             target="_blank"
           >
-            <h3 className="text-3xl font-bold">Desarrolladores</h3>
-            <div className="text-lg">Verificá la documentación, es todo open source.</div>
+            <p className="pr-1 hover:text-neutral-50 font-extrabold">Con el respaldo Open Source de </p>
+            <Logo />
           </Link>
         </div>
       </div>
