@@ -2,8 +2,8 @@ import React from 'react';
 import '~/styles/globals.css';
 
 export const metadata = {
-  title: 'LaWallet.ar',
-  description: 'Identity Provider - LaWallet',
+  title: 'De exploradores para exploradores',
+  description: 'La herramienta social y de pagos con Bitcoin',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

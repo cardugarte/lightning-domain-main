@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 
+
 .color-linear {
+  font-optical-sizing: auto;
   background: linear-gradient(90deg, rgb(14, 165, 234), rgb(11, 209, 209) 51%, rgb(14, 165, 234)) var(--x, 0)/200%;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
@@ -49,7 +51,7 @@ TABLE CONTENT
 /* @import url(../css/vendors/bootstrap.min.css); */
 /* @import url(../css/vendors/uicons-regular-rounded.css); */
 /* @import url(../css/plugins/swiper-bundle.min.css); */
-/* @import url(../css/plugins/animate.min.css); */
+@import url(../assets/css/plugins/animate.min.css);
 /*RESET*/
 html,
 body,
@@ -775,7 +777,6 @@ h6 {
 }
 .hover-neon:hover {
   background: linear-gradient(#131C31, #131C31) padding-box, linear-gradient(to right, rgb(14, 165, 234), rgb(11, 209, 209)) border-box;
-  border-radius: 16px;
   border: 1px solid transparent;
   box-shadow: rgba(11, 209, 209, 0.2) 0px 3px 20px;
   transform: translateY(-2px);
@@ -1095,12 +1096,15 @@ a.text-brand-3:hover {
   background: rgb(14, 165, 234);
   background: linear-gradient(90deg, rgb(14, 165, 234), rgb(11, 209, 209) 51%, rgb(14, 165, 234)) var(--x, 0)/200%;
   color: #ffffff;
-  transition: 0.5s;
+  /* transition: 0.5s; */
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
 .btn.btn-linear:hover {
   --x: 100%;
   color: #ffffff !important;
   transition: 0.5s;
+  transform: translateY(-2px);
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
 .btn.btn-linear i {
   vertical-align: middle;
@@ -1115,6 +1119,8 @@ a.text-brand-3:hover {
 }
 .btn.btn-linear-small:hover {
   color: #66768F !important;
+  transform: translateY(-2px);
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
 .btn.btn-linear-small i {
   vertical-align: middle;
@@ -1154,16 +1160,18 @@ a.text-brand-3:hover {
 }
 .btn.btn-border-linear {
   border: 2px solid #0EA5EA;
-  border-radius: 50px;
   color: #ffffff;
-  padding: 5px 15px;
+  padding: 8px 18px;
   font-size: 14px;
   line-height: 20px;
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
 .btn.btn-border-linear:hover {
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
   color: #ffffff !important;
   background: linear-gradient(90deg, rgb(14, 165, 234), rgb(11, 209, 209) 51%, rgb(14, 165, 234)) var(--x, 0)/200% !important;
   border: 2px solid transparent;
+  transform: translateY(-2px);
 }
 .btn.btn-link-more {
   color: #66768F;
