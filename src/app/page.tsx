@@ -13,7 +13,7 @@ export default function Home() {
             <Image src={logo} alt="logo xplorers.ar" width={600} height={600} />
           </div>
           <div className="flex flex-col items-center justify-center gap-2 mx-4">
-            <h1 className="text-1xl font-extrabold text-neutral-50 sm:text-2xl md:text-4xl lg:text-4xl xl:text-5xl">
+            <h1 className="text-3xl font-extrabold text-neutral-50 sm:text-2xl md:text-4xl lg:text-4xl xl:text-5xl">
               Una plataforma para
             </h1>
             <h2 className="gap-10 text-1xl py-4 font-extrabold tracking-tight text-neutral-50 color-linear">
